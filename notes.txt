@@ -1,10 +1,10 @@
-1. What layout issues did you find?
+1. What layout issues did i find?
 sidebar was not on left side.
 main content was going down.
 header items were not in same line.
 cards were not coming in row.
 
-2. How did you fix them?
+2. How did i fix them?
 i used flexbox in container.
 then sidebar and main came side by side.
 used justify content in header.
@@ -16,7 +16,7 @@ loop was using var inside settimeout.
 4. Why did it happen?
 var takes same value so it was wrong in loop.
 
-5. What improvements did you make?
+5. What improvements did i make?
 used let instead of var.
 added loading text.
 handled error.
