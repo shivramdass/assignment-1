@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="dashboard__header">
+  <h1>Dashboard</h1>
+  <nav class="header__nav">
+    <a href="#">Home</a>
+    <a href="#">Profile</a>
+    <a href="#">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <ul>
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+      <li>Menu 3</li>
+    </ul>
+  </aside>
+
+  <main class="main">
+
+    <section class="cards">
+      <article class="card">Users</article>
+      <article class="card">Orders</article>
+      <article class="card">Revenue</article>
+    </section>
+
+    <div>
+      <button id="loadBtn" onclick="loadData()">Load Data</button>
+    </div>
+
+    <section id="data"></section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

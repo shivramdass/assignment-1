@@ -1,0 +1,58 @@
+/* header */
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  background: lightblue;
+  padding: 10px;
+}
+
+/* navigation */
+.header__nav span {
+  margin-left: 15px;
+}
+
+/* main layout */
+.container {
+  display: flex;   /* sidebar left, main right */
+}
+
+/* sidebar */
+.sidebar {
+  width: auto;
+  background: lightgray;
+  padding: 10px;
+  height: 100px;
+}
+
+/* main content */
+.main {
+  flex: 1;
+  padding: 10px;
+}
+
+/* cards section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* individual card */
+.card {
+  width: 150px;
+  height: 80px;
+  background: pink;
+  margin: 10px;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
