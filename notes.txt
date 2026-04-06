@@ -5,13 +5,13 @@ header items were not in same line.
 cards were not coming in row.
 
 2. How did i fix them?
-i used flexbox in container.
+i used flex-box in container.
 then sidebar and main came side by side.
 used justify content in header.
 used flex wrap for cards.
 
 3. What was the JavaScript bug?
-loop was using var inside settimeout.
+loop was using var inside set timeout.
 
 4. Why did it happen?
 var takes same value so it was wrong in loop.
@@ -21,3 +21,6 @@ used let instead of var.
 added loading text.
 handled error.
 disabled button when loading.
+
+6. What i did't able to do?
+i did able to crete the mobile view good.

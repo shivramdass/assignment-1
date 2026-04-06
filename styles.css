@@ -45,22 +45,51 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100px;
+  justify-content: center;
 }
 
 .card {
-  width: 150px;
-  height: 80px;
+  width: 250px;
   background: pink;
   margin: 10px;
+  padding: 10px;
+  overflow-y: auto;
   text-align: center;
-  line-height: 80px;
 }
 
-@media (max-width: 768px) {
-  .container {
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+@media(max-width:768px){
+  .dashboard{
     flex-direction: column;
   }
-  .sidebar {
+  .sidebar{
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header_nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   border-top: 1px solid rgba(0,0,0,0.2);
+   padding-top: 15px;
+
+  }
+  .header_nav span{
+    margin-left: 0;
+
+  }
+  .cards{
+    flex-direction: column;
   }
 }

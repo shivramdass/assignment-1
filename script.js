@@ -1,5 +1,5 @@
 function loadData() {
-  var container = document.getElementById("data");
+  var container = document.getElementById("usersCard");
   var button = document.getElementById("loadBtn");
 
   button.disabled = true;
@@ -10,7 +10,7 @@ function loadData() {
       return res.json();
     })
     .then(function(data) {
-      container.innerHTML = "";
+      container.innerHTML = "<b>Users:</b>";
 
       for (let i = 0; i < data.length; i++) {   
         setTimeout(function() {
